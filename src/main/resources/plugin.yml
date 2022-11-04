@@ -1,0 +1,9 @@
+name: AntiBot-Ultra
+version: '${project.version}'
+main: cm.dasp.antibotultra.AntibotUltra
+api-version: 1.19
+prefix: AntiBot-Ultra
+load: STARTUP
+authors: [ David ]
+description: A simple yet complex antibot for minecraft servers providing quality over quantity
+website: dasp.com

@@ -1,0 +1,23 @@
+throttler:
+  # turn it on and disable any other throttlers so there's no interference at all
+  enabled: false
+  # allowed n logins
+  max-logins: 8
+  # in n interval of seconds
+  interval: 3
+  # and the duration of the throttler (server-wide (less laggy because we're not creating a thread for each player)), also in n seconds
+  duration: 5
+stop_forum_spam:
+  # i highly recommend to leave this turned on
+  enabled: true
+  # leave blank if you don't want to download a database of proxies
+  url: 'https://www.stopforumspam.com/downloads/listed_ip_180.zip'
+  # interval to update database, should be 24 hours unless you use the hourly updated url database
+  update: 24
+  # recommended to turn on if you don't use the database
+  online: false
+nick_detector:
+  # leave it on unless you know that they're using random nicks without suffixes/prefixes that contains the strings below
+  enabled: true
+  # added them as a list so you can modify it as you wish
+  contains: [ 'mcstorm', 'mcspam', 'deathbot' ]
